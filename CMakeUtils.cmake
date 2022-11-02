@@ -1,3 +1,9 @@
+# first_not_null
+#
+# @brief Select the first notnull element in all args
+#
+# @param [out] output variable.
+# @param [in] values.
 function(first_not_null OUTPUT)
     foreach(VAL ${ARGN})
         if (VAL)
@@ -7,6 +13,11 @@ function(first_not_null OUTPUT)
     endforeach()
 endfunction()
 
+# add_path
+#
+# @brief A utility function to append value to environment variable`PATH`.
+#
+# @param [in] values
 function(add_path)
     # Add your configuration for cmake
     if (WIN32)
