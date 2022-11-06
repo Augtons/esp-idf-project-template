@@ -18,7 +18,7 @@ if (EXISTS ${CMAKE_USER_PROFILE_FILE})
     include(${CMAKE_USER_PROFILE_FILE})
     message("User-specific profile was included.")
 else()
-    file(WRITE ${CMAKE_USER_PROFILE_FILE} "# Add your configuration for cmake")
+    file(WRITE ${CMAKE_USER_PROFILE_FILE} "# Add your configuration for cmake\n\nadd_path(\n\n)")
     message("User specific profile does not exist. It has been automatically created at ${CMAKE_USER_PROFILE_FILE}")
 endif()
 
