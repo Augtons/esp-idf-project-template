@@ -4,7 +4,7 @@
 # CMakeLists in this exact order for cmake to work correctly
 cmake_minimum_required(VERSION 3.5)
 
-include(CMakeUtils.cmake)
+include(cmake/CMakeUtils.cmake)
 
 first_not_null(IDF_USER_NAME "$ENV{USERNAME}" "$ENV{USER}")
 message("Got user name `${IDF_USER_NAME}`")
